@@ -7,7 +7,6 @@ header {
   display: flex;
   align-items: center;
   border-bottom: 1px solid $black;
-
 }
 
 h1 {
@@ -17,6 +16,6 @@ h1 {
   padding: 0 12px;
 }
 
-.header__title-link .link-active { 
-  text-decoration: none; 
+.header__title-link .link-active {
+  text-decoration: none;
 }

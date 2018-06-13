@@ -26,12 +26,46 @@ declare global {
   interface HTMLAttributes {}
 }
 
+
 import '@stencil/router';
 import '@stencil/state-tunnel';
 
 import {
   MatchResults,
 } from '@stencil/router';
+
+declare global {
+
+  namespace StencilComponents {
+    interface AppEmail {
+
+    }
+  }
+
+  interface HTMLAppEmailElement extends StencilComponents.AppEmail, HTMLStencilElement {}
+
+  var HTMLAppEmailElement: {
+    prototype: HTMLAppEmailElement;
+    new (): HTMLAppEmailElement;
+  };
+  interface HTMLElementTagNameMap {
+    'app-email': HTMLAppEmailElement;
+  }
+  interface ElementTagNameMap {
+    'app-email': HTMLAppEmailElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'app-email': JSXElements.AppEmailAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface AppEmailAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
 
 declare global {
 

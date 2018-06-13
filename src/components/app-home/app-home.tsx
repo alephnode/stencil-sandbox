@@ -1,24 +1,21 @@
-import { Component } from '@stencil/core';
-
+import { Component } from '@stencil/core'
 
 @Component({
   tag: 'app-home',
-  styleUrl: 'app-home.scss'
+  styleUrl: 'app-home.scss',
 })
 export class AppHome {
-
   render() {
     return (
-      <div class='app-home'>
-        <p>
-          Welcome to the app.
-          <stencil-route-link url='/upload'>
-          <button>
-            Upload File
-          </button>
+      <div class="app-home">
+        <p>select a utility component</p>
+        <stencil-route-link url="/upload-file">
+          <button>upload file</button>
         </stencil-route-link>
-        </p>
+        <stencil-route-link url="/capture-email">
+          <button>capture email</button>
+        </stencil-route-link>
       </div>
-    );
+    )
   }
 }
