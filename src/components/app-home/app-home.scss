@@ -1,0 +1,27 @@
+@import '../../global/variables.scss';
+
+.app-home {
+  padding: 10px;
+  color: $black;
+}
+
+button {
+  background: $white;
+  color: $black;
+  margin: 8px;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 20px;
+  outline: 0;
+  letter-spacing: .04em;
+  transition: all .15s ease;
+  cursor: pointer;
+}
+  
+button:hover {
+  background: $off-white;
+  transform: translateY(1px);
+}
+
